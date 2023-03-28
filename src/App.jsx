@@ -34,22 +34,22 @@ function App() {
   };
 
   return (
-    <div className="sm:flex sm:items-center sm:justify-center h-screen p-6">
+    <div className="sm:flex sm:items-center sm:justify-center min-h-screen p-6">
       <section className="grid container gap-8  max-w-[70rem] h-auto w-full">
         <section className="profile bg-darkBlue w-full rounded-2xl">
-          <div className="profile-container h-2/3 rounded-2xl p-8 flex flex-col gap-11">
+          <div className="bg-[hsl(246,80%,60%)] h-2/3 rounded-2xl sm:p-8 p-5 flex sm:flex-col sm:gap-11 gap-8 items-center">
             <img 
-              className="h-24 w-24 border-white border-4 rounded-full"
+              className="sm:h-24 sm:w-24 h-16 w-16 border-white border-4 rounded-full"
               src="./assets/images/image-jeremy.png" 
               alt="image-jeremy" 
             
             />
             <div className="">
-              <h3 className="text-[hsl(236,100%,87%)]">Report for</h3>
-              <h1 className="text-4xl text-[40px] font-light">Jeremy Robson</h1>
+              <h3 className="text-[hsl(236,100%,87%)] sm:text-base text-sm">Report for</h3>
+              <h1 className="sm:text-4xl sm:text-[40px] text-2xl font-light">Jeremy Robson</h1>
             </div>
           </div>
-          <div className="p-6 flex flex-col items-start justify-between h-1/3 text-lg text-[hsl(236,100%,87%)]">
+          <div className="p-6 flex sm:flex-col sm:items-start items-center justify-between h-1/3 text-lg text-[hsl(236,100%,87%)]">
             <button ref={dailyBtnRef} className={`text-white`} onClick={handleDailyBtn}>
               Daily
             </button>
@@ -66,14 +66,14 @@ function App() {
             <div className="flex justify-end px-5">
               <img src={item.background} alt="" className="h-20 w-20" />
             </div>
-            <div className="bg-darkBlue px-8 py-8 rounded-t-2xl flex flex-col flex-nowrap gap-3 ">
-              <header className="flex justify-between text-lg">
-                <h3 className="">{item.title}</h3>
-                <div className="">***</div>
+            <div className="bg-darkBlue px-8 py-8 rounded-t-2xl flex flex-col flex-nowrap gap-6">
+              <header className="flex justify-between items-center sm:text-lg text-base">
+                <h3 className="font-medium sm:font-normal">{item.title}</h3>
+                <img className="" src="./assets/images/icon-ellipsis.svg"></img>
               </header>
-              <div className="flex flex-col flex-nowrap items-start justify-between gap-[0px]">
-                <h2 className="text-[56px] font-light">{item.timeframes[currentMode].current}hrs</h2>
-                <p className="text-[hsl(236,100%,87%)]">
+              <div className="flex sm:flex-col flex-nowrap sm:items-start items-center justify-between gap-[10px]">
+                <h2 className="sm:text-[56px] text-3xl font-light">{item.timeframes[currentMode].current}hrs</h2>
+                <p className="text-[hsl(236,100%,87%)] ms:text-base text-sm">
                   Last {amountOfTime} - {item.timeframes[currentMode].previous}
                   hrs
                 </p>
