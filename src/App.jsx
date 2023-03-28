@@ -46,10 +46,10 @@ function App() {
             />
             <div className="">
               <h3 className="text-[hsl(236,100%,87%)] sm:text-base text-sm">Report for</h3>
-              <h1 className="sm:text-4xl sm:text-[40px] text-2xl font-light">Jeremy Robson</h1>
+              <h1 className="sm:leading-tight sm:text-[40px] text-2xl font-light">Jeremy Robson</h1>
             </div>
           </div>
-          <div className="p-6 flex sm:flex-col sm:items-start items-center justify-between h-1/3 text-lg text-[hsl(236,100%,87%)]">
+          <div className="p-6 flex sm:flex-col sm:items-start items-center justify-between h-1/3 text-lg text-[hsl(237,20%,57%)]">
             <button ref={dailyBtnRef} className={`text-white hover:text-white`} onClick={handleDailyBtn}>
               Daily
             </button>
@@ -62,13 +62,13 @@ function App() {
           </div>
         </section>
         {data.map((item, i) => (
-          <section className={`card w-full item-${i} h-full grid grid-rows-[3rem_1fr] overflow-hidden rounded-2xl `} style={{backgroundColor: `${item.background_color}`}}>
+          <section className={`card w-full item-${i} h-full grid grid-rows-[3rem_1fr] overflow-hidden rounded-2xl`} style={{backgroundColor: `${item.background_color}`}}>
             <div className="flex justify-end px-5">
               <img src={item.background} alt="" className="h-20 w-20" />
             </div>
-            <div className="card_info bg-darkBlue px-8 py-8 rounded-t-2xl flex flex-col flex-nowrap gap-6">
-              <header className="flex justify-between items-center sm:text-lg text-base">
-                <h3 className="font-medium sm:font-normal">{item.title}</h3>
+            <div className="card_info bg-darkBlue px-8 py-8 rounded-t-2xl flex flex-col flex-nowrap gap-8">
+              <header className="flex justify-between items-center sm:text-xl text-base">
+                <h3 className="font-semibold sm:font-normal">{item.title}</h3>
                 <img className="hover:brightness-1500 hover:cursor-pointer" src="./assets/images/icon-ellipsis.svg"></img>
               </header>
               <div className="flex sm:flex-col flex-nowrap sm:items-start items-center justify-between sm:gap-4">
