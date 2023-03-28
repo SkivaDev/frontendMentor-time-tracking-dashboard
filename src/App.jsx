@@ -64,12 +64,12 @@ function App() {
         {data.map((item, i) => (
           <section className={`card w-full item-${i} h-full grid grid-rows-[3rem_1fr] overflow-hidden rounded-2xl`} style={{backgroundColor: `${item.background_color}`}}>
             <div className="flex justify-end px-5">
-              <img src={item.background} alt="" className="h-20 w-20" />
+              <img src={item.background} alt="imagen-background" className="h-20 w-20"/>
             </div>
             <div className="card_info bg-darkBlue px-8 py-8 rounded-t-2xl flex flex-col flex-nowrap gap-8">
               <header className="flex justify-between items-center sm:text-xl text-base">
                 <h3 className="font-semibold sm:font-normal">{item.title}</h3>
-                <img className="hover:brightness-1500 hover:cursor-pointer" src="./assets/images/icon-ellipsis.svg"></img>
+                <img className="hover:brightness-1500 hover:cursor-pointer" src="./assets/images/icon-ellipsis.svg" alt="ellipses"></img>
               </header>
               <div className="flex sm:flex-col flex-nowrap sm:items-start items-center justify-between sm:gap-4">
                 <h2 className="sm:text-[56px] text-3xl font-light">{item.timeframes[currentMode].current}hrs</h2>
