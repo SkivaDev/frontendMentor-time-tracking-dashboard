@@ -22,29 +22,28 @@ body {
   grid-area: profile;
 }
 
-/* .item-1 {
+.item-0 {
   grid-area: a;
 }
-.item-2 {
+.item-1 {
   grid-area: b;
 }
-.item-3 {
+.item-2 {
   grid-area: c;
 }
-.item-4 {
+.item-3 {
   grid-area: d;
 }
-.item-5 {
+.item-4 {
   grid-area: e;
 }
-.item-6 {
+.item-5 {
   grid-area: f;
-} */
+}
 
 
 
 .container {
-  min-height: 500px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
