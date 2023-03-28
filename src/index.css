@@ -60,4 +60,8 @@ body {
 }
 
 
+.card:hover > .card_info {
+  background-color: hsl(237, 46%, 31%);
+}
+
 
